@@ -1,0 +1,136 @@
+/*
+Google Fonts
+*/
+/* Raleway */
+@import url('https://fonts.googleapis.com/css?family=Raleway|Merriweather|Montserrat');
+/* @import url('https://fontlibrary.org/face/medio'); */
+
+body, html
+{
+	background-image: url("../img/champagne-col.jpg");
+	/*background-image: url("../img/malachite_room.png");*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	color: #202020;
+}
+
+h1, h2, h3, h4
+{
+	display: inline-block; /* Enable auto-width */
+	font-family: 'Montserrat', 'Raleway',  helvetica, sans-serif;
+	text-align: center;
+	width: 100%;
+}
+
+.btn
+{
+	padding: 15px 15px;
+	font-size: 18px;
+	font-family: 'Montserrat', helvetica, sans-serif;
+}
+
+span.page-counter
+{
+	font-size: 18px;
+	margin-top: 50px;
+}
+.button > img
+{
+	width: 128px;
+}
+.button
+{
+	display: inline-block;
+	width: 128px;
+	transition: 750ms;
+}
+.button:hover, .button.ui
+{
+	transform: scale(1.2);
+	cursor: pointer;
+	font-size: 18px;
+}
+img.gender
+{
+	transition: 750ms;
+}
+img.gender:hover
+{
+	transform: scale(1.2) rotate(45deg);
+	cursor: pointer;
+}
+
+div.overmodal
+{
+	background: rgba(0,0,0,0.6);
+	z-index: 50;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+	top: 0;
+	left: 0;
+}
+div.overmodal > img
+{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+div.overmodal > span
+{
+	position: fixed;
+	bottom: 20%;
+	left: 50%;
+	transform: translate(-50%,50%);
+	font-size: 28px;
+	color: pink;
+	font-family: 'Montserrat', helvetica, sans-serif;
+	text-shadow: 4px 4px 16px black;
+}
+
+div.video-feed
+{
+	padding: 15px 15px;
+}
+
+div.slider
+{
+	height: 64px;
+}
+div.slider > span.ui-slider-handle
+{
+	height: 64px;
+	width: 32px;
+}
+
+div.startup-action > div > h2
+{
+	margin-bottom: 40px;
+}
+div.startup-action
+{
+	margin-top: 50px;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	padding-bottom: 20px;
+	padding-top: 30px;
+}
+
+/* small screens */
+@media only screen and (max-width: 921px) {
+	.no-xs {
+		display: none !important;
+	}
+	h2.subheader-text {
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	#page > img, .left, .right {
+		width: 150px;
+	}
+}
